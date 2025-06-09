@@ -1,54 +1,241 @@
+<!doctype html>
 <html>
-<head>
-<style>
-body {
-	background-image: url("Background.png");
-	background-size: cover;
-	margin-right: 600px;
-}
-a:link {
-	color: orange;
-}
-a:visited {
-	color: maroon;
-}
-</style>
-</head>
-<body>
-<title>
-Lighthouse Covenant Church</title>
+  <head>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon_1.png" />
 
-<h1>Lighthouse Covenant Church</h1>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
 
-<h3>Meeting Times</h3>
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<p>We are meeting at on Sundays at 280 Mowry Ave. in Fremon, CA with the following schedule:
+    <!-- Page title -->
+    <title>Lighthouse Covenant Church</title>
 
-<ul><li>3:00 PM - Fellowship Meal</li>
-<li>4:00 PM - Litergy</li></ul>
+    <!-- Styles -->
+    <link href="./output.css" rel="stylesheet" />
 
-<p>Please note at this time we are not regularly conducting communion due to a lack of local elders to administer. We hope to install qualified elders in God's good time should He bless this endeavor.</p>
+    <!-- SEO basics -->
+    <meta
+      name="description"
+      content="Brief, relevant description of your site."
+    />
+    <meta
+      name="keywords"
+      content="church, covenant, San Francisco Bay Area, Reformed, Evangelical"
+    />
+    <meta name="author" content="Lighthouse Covenant Church" />
 
-<h3>Who we are</h3>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
-<p>Lighthouse Covenant Church is a CREC endeavor to bring faithul worship of God in His prescribed manner to the San Fancisco Bay Area.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-extra-light">
+    <header
+      class="bg-[url('../assets/lighthouse_background.png')] bg-no-repeat bg-cover"
+    >
+      <nav
+        class="z-10 flex justify-between items-center p-8 bg-light opacity-50"
+      >
+        <a class="text-4xl font-serif font-black">Lighthouse</a>
 
-<p>We are currently in a time of transition folowing our pastor's departure and under the authority of Trinity Presbyterian Church in Aptos in order submit ourselves to rightful church authority.</p>
+        <!-- Desktop Navigation -->
+        <ul class="hidden lg:block text-xl">
+          <li class="flex font-sans gap-4">
+            <a
+              class="cursor-pointer hover:underline transition-all p-2"
+              href="/"
+              >Home</a
+            >
+            <a
+              class="cursor-pointer hover:underline transition-all p-2"
+              href="#meeting-times"
+              >Meeting Times</a
+            >
+            <a
+              class="cursor-pointer hover:underline transition-all p-2"
+              href="#who-we-are"
+              >Who We Are</a
+            >
+            <a
+              class="cursor-pointer hover:underline transition-all p-2"
+              href="#contact-us"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-<p>We will also be expanding this site to include more detailed doctrinal statements which are specifically relavent to our region.  Available IMMEDIATELY is our doctrinal confession, <a href=https://crechurches.org/wp-content/uploads/2024/04/CREC-Confessional-Statements2022.pdf>The Three Forms of Unity</a>, starting on page 171.
+      <!-- Hero Text -->
+      <div
+        class="z-20 flex flex-col gap-8 text-extra-light px-16 lg:px-64 py-12 lg:py-40 top-24"
+      >
+        <h1 class="text-6xl font-serif font-black leading-20">
+          Faithful worship in His prescribed manner
+        </h1>
+        <div class="flex flex-col gap-4 font-sans">
+          <p class="text-4xl">
+            "For where two or three gather in my name, there am I with them."
+          </p>
+          <p class="text-2xl">Matthew 18:20</p>
+        </div>
+      </div>
+    </header>
 
-<h3>Coming soon</h3>
+    <!-- Meeting Times -->
+    <div
+      id="meeting-times"
+      class="bg-dark text-extra-light text-center flex flex-col gap-16 px-16 lg:px-64 py-12 lg:py-40"
+    >
+      <h2 class="text-5xl">Meeting Times</h2>
 
-<ul><li>Information on a special service which will include communion</li>
-<li>Doctrinal standards</li>
-<li>Governing procedures</ul>
+      <div class="h-1 rounded bg-extra-light"><!-- divider --></div>
 
-<h3>Additional Resources</h3>
+      <div class="flex flex-col gap-4">
+        <h3 class="text-4xl">Sunday Fellowship Meal</h3>
+        <p class="text-3xl">3:00 pm</p>
+      </div>
 
-<ul><li> <a href=https://crec.org>CREC Website</a></li>
-<li><a href=allsaintskirk.com>CREC Hot Spot Project</a></li>
-<li>During our transition, please reach out to <a href=http://www.tccstanacruzorg/>Trinity Coventant Church, Aptos, CA</a> to contact us as they are graciously supporting us administratively.</li></ul>
+      <div class="h-1 rounded bg-extra-light"><!-- divider --></div>
 
-<h4>Privacy Policy</hr>
+      <div class="flex flex-col gap-4">
+        <h3 class="text-4xl">Sunday Liturgy</h3>
+        <p class="text-3xl">4:00 pm</p>
+        <p class="italic">
+          Please note at this time we are not regularly conducting communion due
+          to a lack of local elders to administer. We hope to install qualified
+          elders in God's good time should He bless this endeavor.
+        </p>
+      </div>
+    </div>
 
-<p>We will not intentionally give, share, or sell privacy sensitive information to anyone unless required by law.  We do not control all aspects of internet traffic through our web service or other sites linked to on ours, and we do not control their privacy policies.</p></body></html>
+    <!-- Who We Are -->
+    <div
+      id="who-we-are"
+      class="flex flex-col gap-12 px-16 lg:px-64 py-12 lg:py-40 font-serif bg-light/75 relative"
+    >
+      <div class="absolute inset"></div>
+      <h2 class="text-5xl font-medium">Who We Are</h2>
+
+      <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-4">
+          <p class="text-2xl">
+            Lighthouse is a group of families worshipping together in the San
+            Francisco Bay Area. We are working towards becoming a church in the
+            Community of Reformed Evangelical Churches (CREC).
+          </p>
+          <a
+            href="https://crechurches.org/"
+            target="_blank"
+            class="bg-medium text-extra-light text-lg rounded-sm self-start px-8 py-4 font-sans"
+          >
+            Learn About the CREC
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <p class="text-2xl">
+            We meet every Sunday for fellowship and liturgical worship. Our
+            doctrinal confession comes from The Three Forms of Unity.
+          </p>
+          <a
+            href="./assets/CREC-Confessional-Statements2022.pdf#page=175"
+            target="_blank"
+            class="bg-medium text-extra-light text-lg rounded-sm self-start px-8 py-4 font-sans"
+          >
+            Read The Three Forms of Unity
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <p class="text-2xl">
+            We are currently in a time of transition folowing our pastor's
+            departure. In order submit ourselves to rightful church authority,
+            we are under the authority of Trinity Covenant Church in Aptos,
+            California.
+          </p>
+          <a
+            href="https://www.tccsantacruz.org/"
+            target="_blank"
+            class="bg-medium text-extra-light text-lg rounded-sm self-start px-8 py-4 font-sans"
+          >
+            Visit Trinity Covenant Church
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+      id="contact-us"
+      class="z-20 flex flex-col gap-8 px-16 lg:px-64 py-12 lg:py-40 font-serif bg-medium text-extra-light relative bg-[url('../assets/lighthouse_background.png')] bg-no-repeat bg-cover bg-bottom"
+    >
+      <h2 class="text-6xl font-black">Lighthouse</h2>
+      <div class="hidden lg:block h-1 w-full rounded bg-extra-light">
+        <!-- desktop divider -->
+      </div>
+
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between text-xl font-sans gap-8"
+      >
+        <div>
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/place/280+Mowry+Ave,+Fremont,+CA+94536/@37.5671011,-121.9667359,16z/data=!4m6!3m5!1s0x808fc060a0818de1:0x724f31bc918044be!8m2!3d37.5686233!4d-121.9700726!16s%2Fg%2F11bw4202sq?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+            class="flex flex-col"
+          >
+            <p>280 Mowry Avenue</p>
+            <p>Fremont, California 94536</p>
+          </a>
+        </div>
+
+        <div class="block lg:hidden h-1 w-full rounded bg-extra-light">
+          <!-- mobile divider -->
+        </div>
+
+        <div class="flex flex-col gap-2 lg:gap-auto">
+          <p class="flex flex-col lg:flex-row gap-auto lg:gap-1">
+            Sunday Fellowship Meal - 3 pm
+          </p>
+          <p class="flex flex-col lg:flex-row gap-auto lg:gap-1">
+            Sunday Liturgy - 4 pm
+          </p>
+        </div>
+
+        <div class="block lg:hidden h-1 w-full rounded bg-extra-light">
+          <!-- mobile/desktop divider -->
+        </div>
+      </div>
+
+      <div class="hidden lg:block h-1 w-full rounded bg-extra-light">
+        <!-- desktop divider -->
+      </div>
+
+      <div class="flex flex-col gap-2 font-sans text-xl">
+        <div class="flex gap-auto lg:gap-2 flex-col lg:flex-row">
+          <p>Call our organizer Chris Close:</p>
+          <a target="_blank" href="tel:15105175474">(510) 517-5474</a>
+        </div>
+
+        <div class="flex gap-auto lg:gap-2 flex-col lg:flex-row">
+          <p>Email our leading men:</p>
+          <a target="_blank" href="mailto:admin@lccfremont.com"
+            >admin@lccfremont.com</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

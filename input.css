@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Nunito Sans", sans-serif;
+
+  --color-extra-light: #fffefc;
+  --color-light: #ccb06c;
+  --color-medium: #224258;
+  --color-dark: #111c26;
+}
